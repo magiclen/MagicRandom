@@ -19,12 +19,12 @@ You don't need to do initialize when you use **MagicRandom** class. Just use its
 
 You can use **randomDouble**, **randomFloat**, **randomLong**, **randomInteger**, **randomShort**, **randomByte** static methods to get a random number. For example,
 
-    System.out.println(randomByte((byte) 48, (byte) 56));
-    System.out.println(randomShort((short)1000, (short)1234));
-    System.out.println(randomInteger(2000, 1285000));
-    System.out.println(randomLong(-9996611L, 965000L));
-    System.out.println(randomFloat(0.5F, 3.0F));
-    System.out.println(randomDouble(-888.777779999, 60000.20));
+    System.out.println(MagicRandom.randomByte((byte) 48, (byte) 56));
+    System.out.println(MagicRandom.randomShort((short)1000, (short)1234));
+    System.out.println(MagicRandom.randomInteger(2000, 1285000));
+    System.out.println(MagicRandom.randomLong(-9996611L, 965000L));
+    System.out.println(MagicRandom.randomFloat(0.5F, 3.0F));
+    System.out.println(MagicRandom.randomDouble(-888.777779999, 60000.20));
 
 The result is,
 
@@ -39,12 +39,12 @@ The result is,
 
 You can use **randomDoubleArray**, **randomFloatArray**, **randomLongArray**, **randomIntegerArray**, **randomShortArray**, **randomByteArray** static methods to get an array with random numbers. For example,
 
-    System.out.println(Arrays.toString(randomByteArray((byte) 48, (byte) 56)));
-    System.out.println(Arrays.toString(randomShortArray((short) 1000, (short) 1234, 10)));
-    System.out.println(Arrays.toString(randomIntegerArray(2000, 1285000, 5)));
-    System.out.println(Arrays.toString(randomLongArray(-9996611L, 965000L, 3)));
-    System.out.println(Arrays.toString(randomFloatArray(0.5F, 3.0F, 4)));
-    System.out.println(Arrays.toString(randomDoubleArray(-888.777779999, 60000.20, 2)));
+    System.out.println(Arrays.toString(MagicRandom.randomByteArray((byte) 48, (byte) 56)));
+    System.out.println(Arrays.toString(MagicRandom.randomShortArray((short) 1000, (short) 1234, 10)));
+    System.out.println(Arrays.toString(MagicRandom.randomIntegerArray(2000, 1285000, 5)));
+    System.out.println(Arrays.toString(MagicRandom.randomLongArray(-9996611L, 965000L, 3)));
+    System.out.println(Arrays.toString(MagicRandom.randomFloatArray(0.5F, 3.0F, 4)));
+    System.out.println(Arrays.toString(MagicRandom.randomDoubleArray(-888.777779999, 60000.20, 2)));
 
 The result is,
 
@@ -61,7 +61,7 @@ You can use **singlePickFromArray** static method to pick one element from an ar
 
     String[] array = new String[]{"Hi", "Hello", "Yo", "Hiya"};
     for (int i = 0; i < 15; ++i) {
-        System.out.print(singlePickFromArray(array, 2, 1) + " ");
+        System.out.print(MagicRandom.singlePickFromArray(array, 2, 1) + " ");
     }
 
 The result is,
